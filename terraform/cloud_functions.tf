@@ -83,9 +83,9 @@ resource "google_cloudfunctions2_function" "vigenair_service" {
   }
 
   service_config {
-    available_memory      = "32Gi"
-    available_cpu         = "8"
-    timeout_seconds       = 540
+    available_memory      = ""512Mi""
+    available_cpu         = "1"
+    timeout_seconds       = 60
     environment_variables = local.service_environment_variables
   }
 
